@@ -3,6 +3,18 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
+.btn-primary{
+    border-radius: 5px;
+    font-size: 1.25rem;
+    color: cornsilk;
+    background: #FF900E;
+    padding: 20px 25px;
+    font-weight: 600;
+    cursor: zoom-out;
+    cursor: pointer;
+    border: 0;
+    transition:ease-in-out;
+}
 
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -60,3 +72,25 @@ nav li a {
     font-weight: 400;
     line-height: 26px;
 }
+.banner-img{
+    margin-top: 20px;
+    width: 100%;
+    
+}
+@media screen and (max-width: 576px){
+  header{
+    padding: 20px;
+  }
+  nav{
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding: 50px;
+    }
+     nav{
+        flex-direction: column;
+     }
+}
+    
