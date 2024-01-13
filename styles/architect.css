@@ -3,10 +3,16 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
-.text-light-gray{
+.Text{
+    margin-top: -30px;
+
+}
+
+.text-light-gray {
     color: #727272;
 }
-.btn-primary{
+
+.btn-primary {
     border-radius: 5px;
     font-size: 1.25rem;
     color: cornsilk;
@@ -16,13 +22,14 @@
     cursor: zoom-out;
     cursor: pointer;
     border: 0;
-    transition:ease-in-out;
+    transition: ease-in-out;
 }
 
 .section-title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
+    margin-top: 20px ;
 }
 
 header {
@@ -33,12 +40,6 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-}
-
-.nav-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #131313;
 }
 
 nav>ul {
@@ -81,75 +82,112 @@ nav li a {
     font-weight: 400;
     line-height: 26px;
 }
-.banner-img{
+
+.banner-img {
     margin-top: 20px;
     width: 80%;
-    
+
 }
 
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 
 }
-.teams-container{
+
+.teams-container {
     display: flex;
     align-items: center;
 }
-.teams-img-container{
+
+.teams-img-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.teams-content{
+
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
 
 }
-.teams-title{
+
+.teams-title {
     font-size: 2.8rem;
 }
-.team-title .quick-list{
+
+.team-title .quick-list {
 
     font-weight: 500;
 
 }
-.team-title .text-feature{
+
+.team-title .text-feature {
     color: #FF900E;
     font-weight: 700;
-} 
+}
 
+.fact-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
 
+.fact-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px 60px;
 
+}
 
+.fact-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+.fact-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin: 0;
 
-@media screen and (max-width: 576px){
-    header{
-      padding: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
     }
-    nav,nav>ul,
-    .teams-img-container{
-      flex-direction: column;
-    
+
+    nav,
+    nav>ul,
+    .teams-img-container {
+        flex-direction: column;
+
     }
-    .teams-img-container{
+
+    .teams-img-container {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
     }
-    .teams-content{
+
+    .teams-content {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .teams-container{
-        flex-direction:column;
+
+    .teams-container {
+        flex-direction: column;
     }
-  }
-  @media screen and (min-width: 576px) and (max-width: 960px){
-      header{
-          padding: 50px;
-      }
-       nav,nav>ul{
-          flex-direction: column;
-       }
-  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav,
+    nav>ul {
+        flex-direction: column;
+    }
+}
