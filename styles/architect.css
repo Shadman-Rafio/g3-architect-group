@@ -3,7 +3,8 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
-.Text{
+
+.Text {
     margin-top: -30px;
 
 }
@@ -29,7 +30,7 @@
     font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
-    margin-top: 20px ;
+    margin-top: 120px;
 }
 
 header {
@@ -85,7 +86,7 @@ nav li a {
 
 .banner-img {
     margin-top: 20px;
-    width: 80%;
+    width: 100%;
 
 }
 
@@ -127,43 +128,102 @@ main {
     font-weight: 700;
 }
 
-.fact-card-container{
+.section-features {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+.section-features .section-title {
+
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-content .card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.feature-img{
+    position: relative;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 350px;
+    padding: 40px 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: -30px;
+
+}
+
+.ten-years-badge h2{
+
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+   
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+    margin-top: -30px;
+
+
+}
+
+
+.fact-card-container {
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
 }
 
-.fact-card-container .card{
+.fact-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
     padding: 30px 60px;
+    margin-top: 50px;
 
 }
 
-.fact-card-container .card-title{
+.fact-card-container .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 5px;
 }
-.fact-card-container .card-stats{
+
+.fact-card-container .card-stats {
     font-size: 2.8rem;
     color: #424242;
     margin: 0;
 
 }
-.Sponsors{
+
+.Sponsors {
     text-align: center;
 }
-.Sponsors-img-container{
-    margin-top: 50px;
+
+.Sponsors-img-container {
+    margin-top: 120px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 40px;
-    
+    gap: 50px;
+
 }
-.Sponsors-img-container img{
+
+.Sponsors-img-container img {
     width: 165px;
     text-align: center;
 
@@ -171,34 +231,65 @@ main {
 
 @media screen and (max-width: 576px) {
     header {
-        padding: 20px;
+        padding: 10px 0;
+        
+    }
+    .banner-img img{
+        margin-top: 5px;
+        width: 100%;
+    }
+    .section-title {
+        margin-top: 20px;
+    }
+    nav li {
+        margin-right: 1px;
+        flex-direction: row;
+       
     }
 
-    nav,
+    nav > ul, 
     .fact-card-container,
     .teams-img-container,
+    .section-features,
     .Sponsors-img-container {
         flex-direction: column;
+        align-items: center;
 
     }
-    
-    .teams-img-container{
+
+
+    .teams-img-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
     }
 
-    .teams-content, .fact-card-container, .Sponsors-img-container{
+    .teams-content,
+    .fact-card-container,
+    .Sponsors-img-container {
         padding-left: 20px;
         padding-right: 20px;
         align-items: center;
     }
-    .fact-card-container{
+
+    .fact-card-container {
         gap: 25px;
     }
 
     .teams-container {
         flex-direction: column;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+    .ten-years-badge{
+        width: 200px;
+        padding: 20px 70px;
+        position: absolute;
+        bottom: -80px;
+    } 
+    .ten-years-badge h2{
+        font-size: 2rem;
     }
 }
 
